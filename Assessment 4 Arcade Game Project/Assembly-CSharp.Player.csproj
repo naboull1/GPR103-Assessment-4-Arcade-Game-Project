@@ -56,16 +56,31 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\bulletProjectile.cs" />
     <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\GameData.cs" />
     <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\SaveLoadFiles.cs" />
     <Compile Include="Assets\Vehicle.cs" />
     <Compile Include="Assets\Obstacle.cs" />
+    <Compile Include="Assets\bulletProjectile.cs" />
+    <Compile Include="Assets\GameData.cs" />
+    <Compile Include="Assets\SaveLoadFiles.cs" />
     <Compile Include="Assets\Platform.cs" />
+    <Compile Include="Assets\SpaceNavigator\Runtime samples\- Follow curve\Scripts\TorusController.cs" />
+    <Compile Include="Assets\SpaceNavigator\Runtime samples\- Fly around\Scripts\SmoothFollow2.cs" />
+    <Compile Include="Assets\SpaceNavigator\Plugins\Settings\Locks.cs" />
+    <Compile Include="Assets\SpaceNavigator\Runtime samples\- Follow curve\Scripts\Torus.cs" />
+    <Compile Include="Assets\SpaceNavigator\Runtime samples\- Fly around\Scripts\FlyAround.cs" />
+    <Compile Include="Assets\SpaceNavigator\Plugins\SpaceNavigatorMac.cs" />
+    <Compile Include="Assets\SpaceNavigator\Plugins\QuaternionExtensions.cs" />
+    <Compile Include="Assets\SpaceNavigator\Plugins\SpaceNavigatorWindows.cs" />
+    <Compile Include="Assets\SpaceNavigator\Plugins\SpaceNavigator.cs" />
+    <Compile Include="Assets\SpaceNavigator\Plugins\Settings\Settings.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\FREE Food Pack\Shaders\Food.shader" />
+     <None Include="Assets\SpaceNavigator\README.txt" />
+     <None Include="Assets\SpaceNavigator\Plugins\TDx.TDxInput.dll" />
+     <None Include="Assets\SpaceNavigator\Changelog.txt" />
+     <None Include="Assets\SpaceNavigator\License.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.0f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>
@@ -266,6 +281,9 @@
     </Reference>
     <Reference Include="Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.5.2\Runtime\VisualScripting.Flow\Dependencies\NCalc\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="TDx.TDxInput">
+      <HintPath>Assets\SpaceNavigator\Plugins\TDx.TDxInput.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.1.0f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

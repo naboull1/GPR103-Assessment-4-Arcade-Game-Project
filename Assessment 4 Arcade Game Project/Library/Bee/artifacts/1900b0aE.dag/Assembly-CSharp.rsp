@@ -108,6 +108,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/SpaceNavigator/Plugins/TDx.TDxInput.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll"
@@ -345,6 +346,16 @@
 "Assets/Platform.cs"
 "Assets/Player.cs"
 "Assets/SaveLoadFiles.cs"
+"Assets/SpaceNavigator/Plugins/QuaternionExtensions.cs"
+"Assets/SpaceNavigator/Plugins/Settings/Locks.cs"
+"Assets/SpaceNavigator/Plugins/Settings/Settings.cs"
+"Assets/SpaceNavigator/Plugins/SpaceNavigator.cs"
+"Assets/SpaceNavigator/Plugins/SpaceNavigatorMac.cs"
+"Assets/SpaceNavigator/Plugins/SpaceNavigatorWindows.cs"
+"Assets/SpaceNavigator/Runtime samples/- Fly around/Scripts/FlyAround.cs"
+"Assets/SpaceNavigator/Runtime samples/- Fly around/Scripts/SmoothFollow2.cs"
+"Assets/SpaceNavigator/Runtime samples/- Follow curve/Scripts/Torus.cs"
+"Assets/SpaceNavigator/Runtime samples/- Follow curve/Scripts/TorusController.cs"
 "Assets/Vehicle.cs"
 -langversion:8.0
 
