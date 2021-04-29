@@ -345,6 +345,8 @@
 "Assets/Obstacle.cs"
 "Assets/Platform.cs"
 "Assets/Player.cs"
+"Assets/PlayerController.cs"
+"Assets/PlayerMovement.cs"
 "Assets/SaveLoadFiles.cs"
 "Assets/SpaceNavigator/Plugins/QuaternionExtensions.cs"
 "Assets/SpaceNavigator/Plugins/Settings/Locks.cs"
