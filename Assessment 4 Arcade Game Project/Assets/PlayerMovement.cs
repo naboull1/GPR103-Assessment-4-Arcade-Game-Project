@@ -1,8 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Runtime.CompilerServices;
+//using System.Numerics;
+using UnityEditor.ShortcutManagement;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement :  Monobehaviour
 {
     // Start is called before the first frame update
 
@@ -27,3 +32,23 @@ public class PlayerMovement : MonoBehaviour
 
     }
 }
+
+private void OnTriggerEnter2D(Collider2D collision)
+{
+    RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up);
+
+    
+
+    if (playerIsAlive)
+    {
+        if (collision.transform.parent.GetComponent<Vehicle>() != null)
+        {
+            //myScore = "Score: "+ 10;
+
+            print("yes");
+            playerIsAlive = true;
+            playerCanMove = true;
+            myGameData.lives -= 1;
+            myGameData.SaveData(myGameData);
+        }
+    }
