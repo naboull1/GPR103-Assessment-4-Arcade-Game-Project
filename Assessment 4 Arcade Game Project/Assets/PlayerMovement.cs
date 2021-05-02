@@ -7,10 +7,11 @@ using System.Runtime.CompilerServices;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
 
-public class PlayerMovement :  Monobehaviour
+public class PlayerMovement :  MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public bool playerIsAlive; //Is the player currently alive?
     public float speed;
     private Vector2 targetPosition;
     void Start()
@@ -31,24 +32,28 @@ public class PlayerMovement :  Monobehaviour
 
 
     }
-}
 
-private void OnTriggerEnter2D(Collider2D collision)
-{
-    RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up);
-
-    
-
-    if (playerIsAlive)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.parent.GetComponent<Vehicle>() != null)
-        {
-            //myScore = "Score: "+ 10;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up);
 
-            print("yes");
-            playerIsAlive = true;
-            playerCanMove = true;
-            myGameData.lives -= 1;
-            myGameData.SaveData(myGameData);
+        print("yes");
+        print("yes");
+
+        if (playerIsAlive)
+        {
+            if (collision.transform.parent.GetComponent<kitchenCatcherScript>() != null)
+            {
+                //myScore = "Score: "+ 10;
+
+                print("yes");
+                playerIsAlive = true;
+                //playerCanMove = true;
+                //myGameData.lives -= 1;
+                //myGameData.SaveData(myGameData);
+            }
         }
     }
+
+    }
+

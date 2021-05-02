@@ -147,8 +147,8 @@ public class Player : MonoBehaviour
 
              
 
-        if (playerIsAlive)
-        {
+        //if (playerIsAlive)
+        //{
             if (collision.transform.parent.GetComponent<Vehicle>() != null)
             {
                 //myScore = "Score: "+ 10;
@@ -159,7 +159,7 @@ public class Player : MonoBehaviour
                 myGameData.lives -= 1;
                 myGameData.SaveData(myGameData);
             }
-        }
+       // }
 
         
 
