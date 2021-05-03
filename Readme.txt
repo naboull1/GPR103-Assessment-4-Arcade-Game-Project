@@ -7,3 +7,6 @@ https://itnext.io/how-to-write-a-simple-3d-character-controller-in-unity-1a07b95
 click movement
 
 
+restart function
+https://answers.unity.com/questions/1261937/creating-a-restart-button.html
+

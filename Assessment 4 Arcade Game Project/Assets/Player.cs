@@ -102,42 +102,42 @@ public class Player : MonoBehaviour
         Move();
 
 
-        //if (playerCanMove && playerIsAlive)
-        //{
-        //    myGameData.lives -= 1;
-        //    myGameData.SaveData(myGameData);
-        //    Debug.DrawRay(transform.position, Vector2.up, new Color(100.0f, 0.0f, 0.0f));
-        //    Debug.DrawRay(transform.position, Vector2.left, new Color(0.0f, 100.0f, 0.0f));
-        //    Debug.DrawRay(transform.position, Vector2.right, new Color(0.0f, 100.0f, 100.0f));
-        //    Debug.DrawRay(transform.position, Vector2.down, new Color(0.0f, .0f, 100.0f));
+        if (playerCanMove && playerIsAlive)
+        {
+            myGameData.lives -= 1;
+            myGameData.SaveData(myGameData);
+            Debug.DrawRay(transform.position, Vector2.up, new Color(100.0f, 0.0f, 0.0f));
+            Debug.DrawRay(transform.position, Vector2.left, new Color(0.0f, 100.0f, 0.0f));
+            Debug.DrawRay(transform.position, Vector2.right, new Color(0.0f, 100.0f, 100.0f));
+            Debug.DrawRay(transform.position, Vector2.down, new Color(0.0f, .0f, 100.0f));
 
 
 
-                //if (Input.GetKeyUp(KeyCode.UpArrow) && transform.position.y < myGameManager.levelConstraintTop)
-                //{
-                //    transform.Translate(new Vector2(0, 1.25f));
-                //}
-                //else if (Input.GetKeyUp(KeyCode.DownArrow) && transform.position.y > myGameManager.levelConstraintBottom)
-                //{
-                //    transform.Translate(new Vector2(0, -1.25f));
-                //}
-                //else if (Input.GetKeyUp(KeyCode.LeftArrow) && transform.position.x > myGameManager.levelConstraintLeft)
-                //{
-                //    transform.Translate(new Vector2(-1.25f, 0));
-                //}
-                //else if (Input.GetKeyUp(KeyCode.RightArrow) && transform.position.x < myGameManager.levelConstraintRight)
-                //{
-                //    transform.Translate(new Vector2(1.25f, 0));
-                //}
-                //else if(Input.GetKeyUp(KeyCode.Space))
-                //{
-                //    GameObject vBullet = Instantiate(bullet, transform.position, transform.rotation);
+            if (Input.GetKeyUp(KeyCode.UpArrow) && transform.position.y < myGameManager.levelConstraintTop)
+            {
+                transform.Translate(new Vector2(0, 1.25f));
+            }
+            else if (Input.GetKeyUp(KeyCode.DownArrow) && transform.position.y > myGameManager.levelConstraintBottom)
+            {
+                transform.Translate(new Vector2(0, -1.25f));
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftArrow) && transform.position.x > myGameManager.levelConstraintLeft)
+            {
+                transform.Translate(new Vector2(-1.25f, 0));
+            }
+            else if (Input.GetKeyUp(KeyCode.RightArrow) && transform.position.x < myGameManager.levelConstraintRight)
+            {
+                transform.Translate(new Vector2(1.25f, 0));
+            }
+            else if (Input.GetKeyUp(KeyCode.Space))
+            {
+                GameObject vBullet = Instantiate(bullet, transform.position, transform.rotation);
 
-                //    vBullet.GetComponent<Rigidbody2D>().AddForce(transform.forward * 10);
+                vBullet.GetComponent<Rigidbody2D>().AddForce(transform.forward * 10);
 
-            //    //}
-            //}
-    }
+                }
+            }
+        }
 
     
 
