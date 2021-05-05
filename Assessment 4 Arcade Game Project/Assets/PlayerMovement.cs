@@ -20,7 +20,7 @@ public class PlayerMovement :  MonoBehaviour
     GameData myGameData;
     public string playerName = "";
     public GameObject scoreText;
-
+    private int myScore;
 
 
     void Start()
@@ -29,8 +29,8 @@ public class PlayerMovement :  MonoBehaviour
         targetPosition = new Vector2(0.0f, 0.0f);
         mGameData2 = new GameData();
         myGameData = new GameData(mGameData2);
-        //myScore = "Score: ";
-        //scoreText = GameObject.Find("ScoreText");
+        myScore = 0;
+        scoreText = GameObject.Find("ScoreText");
         myGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -77,18 +77,38 @@ public class PlayerMovement :  MonoBehaviour
 
         if (playerIsAlive)
         {
-            if (collision.transform.parent.GetComponent<kitchenCatcherScript>() != null)
+            if (collision.transform.GetComponent<kitchenCatcherScript>())
             {
                 //myScore = "Score: "+ 10;
 
-                print("yes");
+                print("caught");
                 playerIsAlive = true;
-                //playerCanMove = true;
+                playerCanMove = true;
                 //myGameData.lives -= 1;
                 //myGameData.SaveData(myGameData);
             }
+
+
+            else if (collision.transform.parent.GetComponent<Snacks>())
+            {
+                ++myScore;
+
+                print("picked up snack");
+                print("Score" );
+                print(myScore);
+                playerIsAlive = true;
+                playerCanMove = true;
+                //myGameData.lives -= 1;
+                //myGameData.SaveData(myGameData);
+                //destroy
+            }
+
+
         }
     }
 
-    }
+
+
+
+}
 

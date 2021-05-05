@@ -10,3 +10,8 @@ click movement
 restart function
 https://answers.unity.com/questions/1261937/creating-a-restart-button.html
 
+rotate function
+https://answers.unity.com/questions/52790/constant-rotation-to-an-object.html
+
+int to ui
+https://www.youtube.com/watch?v=5Fpx8Al9Ms8

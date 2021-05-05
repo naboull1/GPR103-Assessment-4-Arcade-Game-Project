@@ -72,11 +72,13 @@
     <Compile Include="Assets\SpaceNavigator\Plugins\SpaceNavigatorMac.cs" />
     <Compile Include="Assets\GameData.cs" />
     <Compile Include="Assets\SpaceNavigator\Runtime samples\- Fly around\Scripts\SmoothFollow2.cs" />
+    <Compile Include="Assets\Rotator.cs" />
     <Compile Include="Assets\kitchenCatcherScript.cs" />
     <Compile Include="Assets\SaveLoadFiles.cs" />
     <Compile Include="Assets\PlayerMove.cs" />
     <Compile Include="Assets\SpaceNavigator\Plugins\SpaceNavigator.cs" />
     <Compile Include="Assets\SpaceNavigator\Runtime samples\- Follow curve\Scripts\TorusController.cs" />
+    <Compile Include="Assets\snackCount.cs" />
     <Compile Include="Assets\SpaceNavigator\Runtime samples\- Follow curve\Scripts\Torus.cs" />
     <Compile Include="Assets\Snacks.cs" />
     <Compile Include="Assets\Platform.cs" />

@@ -86,8 +86,8 @@ public class Player : MonoBehaviour
     
     mGameData2 = new GameData();
     myGameData = new GameData(mGameData2);
-        //myScore = "Score: ";
-        //scoreText = GameObject.Find("ScoreText");
+        myScore = "Score: ";
+        scoreText = GameObject.Find("ScoreText");
     myGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
     }
