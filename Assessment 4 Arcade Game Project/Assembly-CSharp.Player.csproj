@@ -80,8 +80,11 @@
     <Compile Include="Assets\SpaceNavigator\Runtime samples\- Follow curve\Scripts\TorusController.cs" />
     <Compile Include="Assets\snackCount.cs" />
     <Compile Include="Assets\SpaceNavigator\Runtime samples\- Follow curve\Scripts\Torus.cs" />
+    <Compile Include="Assets\UIcounter.cs" />
     <Compile Include="Assets\Snacks.cs" />
     <Compile Include="Assets\Platform.cs" />
+    <Compile Include="Assets\CaughtAppear.cs" />
+    <Compile Include="Assets\PanelAppear.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -673,10 +676,6 @@
       <Project>{DBD49F65-26B6-B6A1-115F-28B70C464F8F}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{423AE64B-8AEF-E0DC-C56B-B6D255CCCFF4}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
       <Project>{EA48356A-8A7D-D9F5-3189-A31ED02A2838}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
@@ -716,6 +715,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{C64F39F3-D66F-B0DA-98FA-8CAC190A7626}</Project>
       <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{423AE64B-8AEF-E0DC-C56B-B6D255CCCFF4}</Project>
+      <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

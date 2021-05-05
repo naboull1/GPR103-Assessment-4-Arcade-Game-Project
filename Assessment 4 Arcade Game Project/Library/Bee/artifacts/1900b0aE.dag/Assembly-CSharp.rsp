@@ -340,10 +340,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/bulletProjectile.cs"
+"Assets/CaughtAppear.cs"
 "Assets/GameData.cs"
 "Assets/GameManager.cs"
 "Assets/kitchenCatcherScript.cs"
 "Assets/Obstacle.cs"
+"Assets/PanelAppear.cs"
 "Assets/Platform.cs"
 "Assets/Player.cs"
 "Assets/PlayerController.cs"
@@ -364,6 +366,7 @@
 "Assets/SpaceNavigator/Runtime samples/- Fly around/Scripts/SmoothFollow2.cs"
 "Assets/SpaceNavigator/Runtime samples/- Follow curve/Scripts/Torus.cs"
 "Assets/SpaceNavigator/Runtime samples/- Follow curve/Scripts/TorusController.cs"
+"Assets/UIcounter.cs"
 "Assets/Vehicle.cs"
 -langversion:8.0
 

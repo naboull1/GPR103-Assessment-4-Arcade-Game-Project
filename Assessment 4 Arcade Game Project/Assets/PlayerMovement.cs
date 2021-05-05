@@ -6,6 +6,9 @@ using System.Runtime.CompilerServices;
 //using System.Numerics;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
+using UnityEngine.UIElements;
+
+
 
 public class PlayerMovement :  MonoBehaviour
 {
@@ -20,7 +23,10 @@ public class PlayerMovement :  MonoBehaviour
     GameData myGameData;
     public string playerName = "";
     public GameObject scoreText;
-    private int myScore;
+    public int myScore;
+    [SerializeField] private Image endGameImage;
+    public GameObject panel;
+    int counter;
 
 
     void Start()
@@ -32,6 +38,8 @@ public class PlayerMovement :  MonoBehaviour
         myScore = 0;
         scoreText = GameObject.Find("ScoreText");
         myGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        endGameImage.visible = false;
+   
     }
 
 
@@ -64,11 +72,30 @@ public class PlayerMovement :  MonoBehaviour
     }
 
 
+    void deathMessage()
+    {
+        print("dead");
+    }
+
+    public void showhidepanel()
+    {
+
+        {
+            counter++;
+            if (counter % 2 == 1)
+            {
+                panel.gameObject.SetActive(false);
+            }
+            else
+            {
+                panel.gameObject.SetActive(true);
+            }
+        }
+    }
 
 
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
+private void OnTriggerEnter2D(Collider2D collision)
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up);
 
@@ -79,11 +106,13 @@ public class PlayerMovement :  MonoBehaviour
         {
             if (collision.transform.GetComponent<kitchenCatcherScript>())
             {
-                //myScore = "Score: "+ 10;
 
+
+                showhidepanel();
                 print("caught");
-                playerIsAlive = true;
-                playerCanMove = true;
+                deathMessage();
+                playerIsAlive = false;
+                playerCanMove = false;
                 //myGameData.lives -= 1;
                 //myGameData.SaveData(myGameData);
             }
@@ -92,23 +121,13 @@ public class PlayerMovement :  MonoBehaviour
             else if (collision.transform.parent.GetComponent<Snacks>())
             {
                 ++myScore;
-
                 print("picked up snack");
                 print("Score" );
                 print(myScore);
-                playerIsAlive = true;
-                playerCanMove = true;
                 //myGameData.lives -= 1;
                 //myGameData.SaveData(myGameData);
-                //destroy
             }
-
-
         }
     }
-
-
-
-
 }
 

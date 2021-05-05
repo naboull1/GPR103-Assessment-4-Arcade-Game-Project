@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,12 +9,12 @@ public class snackCount : MonoBehaviour
     // snack count
     public static int snacks;
 
-     text;
+     //text;
 
     private void Awake()
     {
         //reference the text
-        text = GetComponent<Text>();
+        //text = GetComponent<Text>();
 
         //Reset
         snacks = 0;
@@ -24,6 +24,6 @@ public class snackCount : MonoBehaviour
     void Update()
     {
         //change the text on screen
-        text.text = "Snacks Eaten: " + snacks;
+       // text.text = "Snacks Eaten: " + snacks;
     }
 }
