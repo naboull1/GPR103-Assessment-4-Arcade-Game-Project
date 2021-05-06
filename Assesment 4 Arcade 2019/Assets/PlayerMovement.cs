@@ -29,6 +29,8 @@ public class PlayerMovement :  MonoBehaviour
     int counter;
     public float timeRemaining = 20;
     public bool timerIsRunning = true;
+    public AudioSource RewardSound;
+    public AudioSource LoosingSound;
 
 
 
@@ -43,6 +45,8 @@ public class PlayerMovement :  MonoBehaviour
         myGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //endGameImage.visible = false;
         timerIsRunning = true;
+        RewardSound = GetComponent<AudioSource>();
+        LoosingSound = GetComponent<AudioSource>();
     }
 
 
@@ -78,6 +82,7 @@ public class PlayerMovement :  MonoBehaviour
         else
         {
             Debug.Log("Time has run out!");
+            LoosingSound.Play();
             timeRemaining = 0;
             timerIsRunning = false;
             playerIsAlive = false;
@@ -120,13 +125,13 @@ public class PlayerMovement :  MonoBehaviour
         {
             if (collision.transform.GetComponent<kitchenCatcherScript>())
             {
-
-
                 showhidepanel();
                 print("caught");
                 deathMessage();
+                LoosingSound.Play();
                 playerIsAlive = false;
                 playerCanMove = false;
+
                 //myGameData.lives -= 1;
                 //myGameData.SaveData(myGameData);
             }
@@ -138,6 +143,8 @@ public class PlayerMovement :  MonoBehaviour
                 print("picked up snack");
                 print("Score");
                 print(myScore);
+                RewardSound.Play();
+                Destroy(collision.gameObject);
                 //myGameData.lives -= 1;
                 //myGameData.SaveData(myGameData);
             }
