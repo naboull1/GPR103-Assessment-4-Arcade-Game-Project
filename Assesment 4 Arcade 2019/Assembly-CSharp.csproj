@@ -77,6 +77,7 @@
     <Compile Include="Assets\Restart.cs" />
     <Compile Include="Assets\Rotator.cs" />
     <Compile Include="Assets\SaveLoadFiles.cs" />
+    <Compile Include="Assets\Score.cs" />
     <Compile Include="Assets\Snacks.cs" />
     <Compile Include="Assets\SpaceNavigator\Plugins\QuaternionExtensions.cs" />
     <Compile Include="Assets\SpaceNavigator\Plugins\Settings\Locks.cs" />

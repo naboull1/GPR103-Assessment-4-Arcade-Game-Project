@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class CaughtAppear : MonoBehaviour
 {
-    [SerializeField] public Image endGameImage;
+    [SerializeField] private Image endGameImage;
 
 
     // Start is called before the first frame update
@@ -15,16 +15,25 @@ public class CaughtAppear : MonoBehaviour
         // endGameImage.transform.position.Set(0.05f, 0.05f, 0f);
     }
 
-    void onTriggerEnter(Collider other)
+    //void onTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("caughtscreen"))
+    //    {
+    //        endGameImage.enabled = true;
+    //        print("caughtscreenworking");
+    //    }
 
-    {
-        print("caughtscreenworking2");
+    //}
 
-        if (other.CompareTag("caughtscreen"))
-        {
-            endGameImage.visible = true;
-            print("caughtscreenworking3");
-        }
 
-    }
+    //void onTriggerExit(Collider other)
+    //{
+    //    if (other.CompareTag("caughtscreen"))
+    //    {
+    //        endGameImage.enabled = false;
+    //        print("caughtscreenworking");
+    //    }
+
+    //}
+
 }

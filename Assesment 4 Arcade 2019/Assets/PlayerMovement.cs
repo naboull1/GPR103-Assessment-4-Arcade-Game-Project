@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 
@@ -31,6 +32,7 @@ public class PlayerMovement :  MonoBehaviour
     public bool timerIsRunning = true;
     public AudioSource RewardSound;
     public AudioSource LoosingSound;
+    public TextMeshProUGUI scoreUI;
 
 
 
@@ -88,6 +90,8 @@ public class PlayerMovement :  MonoBehaviour
             playerIsAlive = false;
             playerCanMove = false;
         }
+        scoreUI.text = scoreUI.ToString();
+
     }
 
 
@@ -101,13 +105,16 @@ public class PlayerMovement :  MonoBehaviour
 
         {
             counter++;
-            if (counter % 2 == 1)
+            if (panel.gameObject.activeInHierarchy == false)
             {
-                panel.gameObject.SetActive(false);
+                panel.gameObject.SetActive(true);
+
+                print("caughttrue");
             }
             else
             {
-                panel.gameObject.SetActive(true);
+                panel.gameObject.SetActive(false);
+                print("caughtfalse");
             }
         }
     }
@@ -126,7 +133,6 @@ public class PlayerMovement :  MonoBehaviour
             if (collision.transform.GetComponent<kitchenCatcherScript>())
             {
                 showhidepanel();
-                print("caught");
                 deathMessage();
                 LoosingSound.Play();
                 playerIsAlive = false;
@@ -147,6 +153,12 @@ public class PlayerMovement :  MonoBehaviour
                 Destroy(collision.gameObject);
                 //myGameData.lives -= 1;
                 //myGameData.SaveData(myGameData);
+                if (gameObject.tag == "caughtscreen")
+                {
+                    myScore++;
+                    print("adding score");
+                }
+
             }
         }
     }

@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 187686592}
   m_Layer: 0
   m_Name: Catchers
-  m_TagString: Untagged
+  m_TagString: caughtscreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1489,9 +1489,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1050135383}
   - {fileID: 1831698552}
   - {fileID: 1562615159}
-  - {fileID: 1050135383}
   - {fileID: 2051183013}
   m_Father: {fileID: 1906932140}
   m_RootOrder: 0
@@ -1590,7 +1590,7 @@ GameObject:
   - component: {fileID: 696551075}
   m_Layer: 0
   m_Name: bedroom
-  m_TagString: caughtscreen
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1654,11 +1654,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696551071}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49489932b7d987e4aa8c001afebe933a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endGameImage: {fileID: 2051183014}
 --- !u!1 &730091930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014030850534, guid: 308c89097ca814e44b0ff03d3c0c633b,
@@ -2719,7 +2720,7 @@ GameObject:
   - component: {fileID: 1050135384}
   - component: {fileID: 1050135386}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2732,16 +2733,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050135382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4526.4}
+  m_LocalRotation: {x: -0.000000029802319, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4431}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 603778858}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 488, y: 279}
+  m_AnchoredPosition: {x: 487.99225, y: 278.99826}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050135384
@@ -2763,7 +2764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Snack
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2849,9 +2850,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1050135382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8781f92380cf6e840962a978f2e8bfcd, type: 3}
+  m_Script: {fileID: 11500000, guid: aebd06536e9c46d4d8c61efcd8af91fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
+  scoreUI: {fileID: 1050135384}
 --- !u!1001 &1069894815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3619,14 +3622,28 @@ MonoBehaviour:
   playerCanMove: 1
   speed: 3
   playerName: Amira
-  scoreText: {fileID: 0}
-  myScore: 0
+  scoreText: {fileID: 1516090539}
+  myScore: 12
   endGameImage: {fileID: 0}
   panel: {fileID: 2051183012}
   timeRemaining: 20
   timerIsRunning: 1
   RewardSound: {fileID: 1407473185}
   LoosingSound: {fileID: 187686592}
+  scoreUI: {fileID: 1050135384}
+--- !u!114 &1407473188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407473184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49489932b7d987e4aa8c001afebe933a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endGameImage: {fileID: 2051183014}
 --- !u!81 &1407473189
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3635,6 +3652,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407473184}
   m_Enabled: 1
+--- !u!114 &1407473192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407473184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aebd06536e9c46d4d8c61efcd8af91fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 1
+  scoreUI: {fileID: 1050135384}
 --- !u!1001 &1440468424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3757,6 +3788,10 @@ PrefabInstance:
     - target: {fileID: 1000012400448258, guid: 9b21be590f33e0d4ba19fec73ce555da, type: 3}
       propertyPath: m_Name
       value: Fries
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012400448258, guid: 9b21be590f33e0d4ba19fec73ce555da, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000013642386698, guid: 9b21be590f33e0d4ba19fec73ce555da, type: 3}
       propertyPath: m_RootOrder
@@ -4211,7 +4246,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 603778858}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4454,7 +4489,7 @@ PrefabInstance:
     - target: {fileID: 6252356961377389083, guid: 2db03e7c8a8135146b280e5da7e0289c,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: caughtscreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
@@ -4507,6 +4542,19 @@ MonoBehaviour:
   x: 0
   y: 0.1
   z: 0
+--- !u!114 &1591979165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591979162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49489932b7d987e4aa8c001afebe933a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endGameImage: {fileID: 2051183014}
 --- !u!1 &1619208328 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011314148014, guid: 91e1f9e8a986ed344be385215d3145b3,
@@ -4797,7 +4845,7 @@ GameObject:
   - component: {fileID: 1768633405}
   m_Layer: 0
   m_Name: Snacks
-  m_TagString: Untagged
+  m_TagString: caughtscreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5038,7 +5086,7 @@ RectTransform:
   m_Children:
   - {fileID: 1968803449}
   m_Father: {fileID: 603778858}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5729,7 +5777,7 @@ GameObject:
   - component: {fileID: 1953559281}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: caughtscreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5971,6 +6019,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_male_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7478225697116208144, guid: 6fb37f825ee63264b9c2600bf1a52006,
+        type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fb37f825ee63264b9c2600bf1a52006, type: 3}
 --- !u!4 &2043184757 stripped
@@ -5996,7 +6049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2051183013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6023,7 +6076,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051183012}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
