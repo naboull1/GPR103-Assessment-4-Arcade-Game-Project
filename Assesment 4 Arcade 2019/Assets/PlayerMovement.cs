@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 //using System.Numerics;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 
 
@@ -27,6 +27,9 @@ public class PlayerMovement :  MonoBehaviour
     [SerializeField] private Image endGameImage;
     public GameObject panel;
     int counter;
+    public float timeRemaining = 20;
+    public bool timerIsRunning = true;
+
 
 
     void Start()
@@ -38,8 +41,8 @@ public class PlayerMovement :  MonoBehaviour
         myScore = 0;
         scoreText = GameObject.Find("ScoreText");
         myGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        endGameImage.visible = false;
-   
+        //endGameImage.visible = false;
+        timerIsRunning = true;
     }
 
 
@@ -66,9 +69,20 @@ public class PlayerMovement :  MonoBehaviour
                 targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
             }
             this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
-
         }
 
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        else
+        {
+            Debug.Log("Time has run out!");
+            timeRemaining = 0;
+            timerIsRunning = false;
+            playerIsAlive = false;
+            playerCanMove = false;
+        }
     }
 
 
@@ -95,7 +109,7 @@ public class PlayerMovement :  MonoBehaviour
 
 
 
-private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up);
 
@@ -122,7 +136,7 @@ private void OnTriggerEnter2D(Collider2D collision)
             {
                 ++myScore;
                 print("picked up snack");
-                print("Score" );
+                print("Score");
                 print(myScore);
                 //myGameData.lives -= 1;
                 //myGameData.SaveData(myGameData);
@@ -130,4 +144,6 @@ private void OnTriggerEnter2D(Collider2D collision)
         }
     }
 }
+
+
 
