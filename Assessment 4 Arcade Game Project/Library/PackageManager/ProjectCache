@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637545016943264268
-    m_Hash: 1959102632
+      ticks: 637558671385568880
+    m_Hash: 2537249811
   m_LockFileStatus:
     m_FilePath: G:/Work/GitKraken/GPR103-Assessment-4-Arcade-Game-Project/Assessment
       4 Arcade Game Project/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637545017532276039
-    m_Hash: 3039731733
+      ticks: 637558671393156191
+    m_Hash: 293897101
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -25,13 +25,13 @@ m_ProjectPath: G:/Work/GitKraken/GPR103-Assessment-4-Arcade-Game-Project/Assessm
   4 Arcade Game Project/Packages
 m_EditorVersion: 2021.1.0f1 (61a549675243)
 m_ResolvedPackages:
-- packageId: com.unity.2d.animation@5.0.3
+- packageId: com.unity.2d.animation@5.0.4
   testable: 0
   isDirectDependency: 1
-  version: 5.0.3
+  version: 5.0.4
   source: 1
   resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.2d.animation@5.0.3
+    4 Arcade Game Project\Library\PackageCache\com.unity.2d.animation@5.0.4
   assetPath: Packages/com.unity.2d.animation
   name: com.unity.2d.animation
   displayName: 2D Animation
@@ -153,13 +153,13 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637408845570000000
+  datePublishedTicks: 637478931180000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: c97def465b1932276762fc13f4cfee58da99d5e9
+    revision: 3cf59035d02a34d40d678f2cd5f1c65515a8347e
     path: 
   unityLifecycle:
     version: 
@@ -328,7 +328,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.uielementsnative
     version: 1.0.0
   - name: com.unity.2d.animation
-    version: 5.0.3
+    version: 5.0.4
   - name: com.unity.mathematics
     version: 1.2.1
   - name: com.unity.modules.animation
@@ -415,13 +415,13 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.2d.spriteshape@5.1.0
+- packageId: com.unity.2d.spriteshape@5.1.1
   testable: 0
   isDirectDependency: 1
-  version: 5.1.0
+  version: 5.1.1
   source: 1
   resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.2d.spriteshape@5.1.0
+    4 Arcade Game Project\Library\PackageCache\com.unity.2d.spriteshape@5.1.1
   assetPath: Packages/com.unity.2d.spriteshape
   name: com.unity.2d.spriteshape
   displayName: 2D SpriteShape
@@ -541,13 +541,13 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637408852810000000
+  datePublishedTicks: 637478930260000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/2d.git
-    revision: c97def465b1932276762fc13f4cfee58da99d5e9
+    revision: 3cf59035d02a34d40d678f2cd5f1c65515a8347e
     path: 
   unityLifecycle:
     version: 
@@ -646,6 +646,7 @@ m_ResolvedPackages:
     - 1.3.7
     - 1.3.8
     - 1.3.9
+    - 1.5.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -658,6 +659,7 @@ m_ResolvedPackages:
     - 2.1.0-preview.6
     compatible:
     - 1.3.9
+    - 1.5.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -705,13 +707,13 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.ide.rider@3.0.5
+- packageId: com.unity.ide.rider@3.0.6
   testable: 0
   isDirectDependency: 1
-  version: 3.0.5
+  version: 3.0.6
   source: 1
   resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.ide.rider@3.0.5
+    4 Arcade Game Project\Library\PackageCache\com.unity.ide.rider@3.0.6
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -751,11 +753,17 @@ m_ResolvedPackages:
     - 3.0.3
     - 3.0.4
     - 3.0.5
+    - 3.0.6
     compatible:
     - 3.0.5
-    verified: 3.0.5
-  dependencies: []
-  resolvedDependencies: []
+    - 3.0.6
+    verified: 3.0.6
+  dependencies:
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  resolvedDependencies:
+  - name: com.unity.ext.nunit
+    version: 1.0.6
   keywords: []
   registry:
     id: main
@@ -769,13 +777,13 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637502896060000000
+  datePublishedTicks: 637545389350000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: c84d2b08574326cd1e40dcae5378c556c6aecad8
+    revision: 0be4afe0ac726df5939a6ce50f8b7575968c5d6f
     path: 
   unityLifecycle:
     version: 
@@ -823,7 +831,7 @@ m_ResolvedPackages:
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.1.22
+    version: 1.1.24
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
@@ -917,13 +925,13 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.test-framework@1.1.22
+- packageId: com.unity.test-framework@1.1.24
   testable: 0
   isDirectDependency: 1
-  version: 1.1.22
+  version: 1.1.24
   source: 1
   resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.test-framework@1.1.22
+    4 Arcade Game Project\Library\PackageCache\com.unity.test-framework@1.1.24
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -999,24 +1007,24 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637469345300000000
+  datePublishedTicks: 637505702940000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: git+https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: 56c667cbc326a1cbab8dfd7ebc693a1121d0abe1
+    revision: e6fe8892689398c0d9aba4587e0ba69edc3d82b8
     path: 
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.textmeshpro@3.0.4
+- packageId: com.unity.textmeshpro@3.0.6
   testable: 0
   isDirectDependency: 1
-  version: 3.0.4
+  version: 3.0.6
   source: 1
   resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.textmeshpro@3.0.4
+    4 Arcade Game Project\Library\PackageCache\com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -1087,6 +1095,7 @@ m_ResolvedPackages:
     - 1.5.3
     - 1.5.4
     - 1.5.5
+    - 1.5.6
     - 2.0.0
     - 2.0.1-preview.1
     - 2.0.1
@@ -1107,6 +1116,7 @@ m_ResolvedPackages:
     - 2.1.3
     - 2.1.4
     - 2.1.5
+    - 2.1.6
     - 3.0.0-preview.1
     - 3.0.0-preview.3
     - 3.0.0-preview.4
@@ -1123,10 +1133,12 @@ m_ResolvedPackages:
     - 3.0.3
     - 3.0.4
     - 3.0.5
+    - 3.0.6
     compatible:
     - 3.0.4
     - 3.0.5
-    verified: 3.0.5
+    - 3.0.6
+    verified: 3.0.6
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -1155,24 +1167,24 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637492944820000000
+  datePublishedTicks: 637547111200000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-    revision: e2f8dffb26de9a130d5b2140d83891d9a7825330
+    revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
     path: 
   unityLifecycle:
     version: 
     nextVersion: 
-- packageId: com.unity.timeline@1.5.2
+- packageId: com.unity.timeline@1.5.5
   testable: 0
   isDirectDependency: 1
-  version: 1.5.2
+  version: 1.5.5
   source: 1
   resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.timeline@1.5.2
+    4 Arcade Game Project\Library\PackageCache\com.unity.timeline@1.5.5
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1233,6 +1245,7 @@ m_ResolvedPackages:
     - 1.4.5
     - 1.4.6
     - 1.4.7
+    - 1.4.8
     - 1.5.0-pre.2
     - 1.5.0-preview.1
     - 1.5.0-preview.2
@@ -1244,14 +1257,18 @@ m_ResolvedPackages:
     - 1.5.1-pre.3
     - 1.5.2
     - 1.5.4
+    - 1.5.5
     - 1.6.0-pre.1
     - 1.6.0-pre.3
+    - 1.6.0-pre.4
     compatible:
     - 1.5.2
     - 1.5.4
+    - 1.5.5
     - 1.6.0-pre.1
     - 1.6.0-pre.3
-    verified: 1.5.4
+    - 1.6.0-pre.4
+    verified: 1.5.5
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -1288,79 +1305,13 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637462521340000000
+  datePublishedTicks: 637557616440000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: 7bdad7882133452ed8b2cd5bfca556726d3e7a64
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-- packageId: com.unity.ugui@1.0.0
-  testable: 0
-  isDirectDependency: 1
-  version: 1.0.0
-  source: 2
-  resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.ugui@1.0.0
-  assetPath: Packages/com.unity.ugui
-  name: com.unity.ugui
-  displayName: Unity UI
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "Unity UI is a set of tools for developing user interfaces for games
-    and applications. It is a GameObject-based UI system that uses Components and
-    the Game View to arrange, position, and style user interfaces. \u200B You cannot
-    use Unity UI to create or change user interfaces in the Unity Editor."
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    verified: 1.0.0
-  dependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  keywords:
-  - UI
-  - ugui
-  - Unity UI
-  - Canvas
-  registry:
-    id: 
-    name: 
-    url: 
-    scopes: []
-    isDefault: 0
-    capabilities: 0
-  hasRegistry: 0
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
+    revision: 4bb067f24973c7cfa1e4a453615e43083ce6855d
     path: 
   unityLifecycle:
     version: 
@@ -1399,10 +1350,12 @@ m_ResolvedPackages:
     - 1.5.2
     - 1.6.0-pre.3
     - 1.6.0
+    - 1.6.1
     compatible:
     - 1.5.2
     - 1.6.0-pre.3
     - 1.6.0
+    - 1.6.1
     verified: 1.5.2
   dependencies:
   - name: com.unity.ugui
@@ -3334,6 +3287,72 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
+- packageId: com.unity.ugui@1.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.0
+  source: 2
+  resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
+    4 Arcade Game Project\Library\PackageCache\com.unity.ugui@1.0.0
+  assetPath: Packages/com.unity.ugui
+  name: com.unity.ugui
+  displayName: Unity UI
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "Unity UI is a set of tools for developing user interfaces for games
+    and applications. It is a GameObject-based UI system that uses Components and
+    the Game View to arrange, position, and style user interfaces. \u200B You cannot
+    use Unity UI to create or change user interfaces in the Unity Editor."
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    verified: 1.0.0
+  dependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - UI
+  - ugui
+  - Unity UI
+  - Canvas
+  registry:
+    id: 
+    name: 
+    url: 
+    scopes: []
+    isDefault: 0
+    capabilities: 0
+  hasRegistry: 0
+  hideInEditor: 1
+  entitlements:
+    isAllowed: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
@@ -3356,6 +3375,11 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.1.5-preview
+    - 0.1.6-preview
+    - 0.1.9-preview
+    - 1.0.0
+    - 1.0.5
     - 1.0.6
     compatible:
     - 1.0.6
@@ -3378,7 +3402,7 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637429759280000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3411,6 +3435,19 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.5
+    - 0.0.12-preview.8
+    - 0.0.12-preview.10
+    - 0.0.12-preview.11
+    - 0.0.12-preview.13
+    - 0.0.12-preview.17
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 1.0.0-preview.1
+    - 1.0.1
+    - 1.1.0-preview.1
+    - 1.1.0
     - 1.2.1
     compatible:
     - 1.2.1
@@ -3431,12 +3468,12 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637324062630000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+    url: git+https://github.com/Unity-Technologies/Unity.Mathematics.git
     revision: 71412d94b7a0b0fdbb3195a5e6559bf6a761e91a
     path: 
   unityLifecycle:
@@ -3464,9 +3501,30 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.9-preview.1
+    - 1.0.9-preview.2
+    - 1.0.10-preview
+    - 1.0.11-preview.1
+    - 1.1.0-preview.1
+    - 1.1.0-preview.2
+    - 1.2.0-preview.1
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0
+    - 3.0.0
+    - 3.0.1
+    - 4.0.0
+    - 4.0.1
+    - 4.0.2
     - 4.0.3
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0
     compatible:
     - 4.0.3
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0
     verified: 4.0.3
   dependencies:
   - name: com.unity.2d.sprite
@@ -3500,7 +3558,7 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637408843940000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3533,9 +3591,28 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.1
+    - 1.0.0-preview.4
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.1.0
+    - 3.0.0
+    - 3.0.1
+    - 3.0.2
+    - 4.0.0
     - 4.0.1
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0
     compatible:
     - 4.0.1
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0
     verified: 4.0.1
   dependencies: []
   resolvedDependencies: []
@@ -3554,7 +3631,7 @@ m_ResolvedPackages:
   entitlements:
     isAllowed: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637328350450000000
   documentationUrl: 
   hasRepository: 1
   repository:
