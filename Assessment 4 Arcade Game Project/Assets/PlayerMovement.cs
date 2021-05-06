@@ -32,7 +32,7 @@ public class PlayerMovement :  MonoBehaviour
     void Start()
     {
 
-        targetPosition = new Vector2(0.0f, 0.0f);
+        targetPosition = new Vector2(0.0f, 0.0f, 0.0f);
         mGameData2 = new GameData();
         myGameData = new GameData(mGameData2);
         myScore = 0;
@@ -63,7 +63,8 @@ public class PlayerMovement :  MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 targetPosition = Input.mousePosition;
-                targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
+                //targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(transform.position.x, transform.position.y, transform.position.z));
+                targetPosition = Camera.main.ScreenToWorldPoint(new Vector2(targetPosition.x, targetPosition.y));
             }
             this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
 

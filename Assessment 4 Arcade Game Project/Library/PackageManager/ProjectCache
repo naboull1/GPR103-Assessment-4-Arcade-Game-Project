@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637558158261519134
-    m_Hash: 2434437169
+      ticks: 637558671385568880
+    m_Hash: 2537249811
   m_LockFileStatus:
     m_FilePath: G:/Work/GitKraken/GPR103-Assessment-4-Arcade-Game-Project/Assessment
       4 Arcade Game Project/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637558158268526128
-    m_Hash: 1004447206
+      ticks: 637558671393156191
+    m_Hash: 293897101
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1312,72 +1312,6 @@ m_ResolvedPackages:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
     revision: 4bb067f24973c7cfa1e4a453615e43083ce6855d
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-- packageId: com.unity.ugui@1.0.0
-  testable: 0
-  isDirectDependency: 1
-  version: 1.0.0
-  source: 2
-  resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
-    4 Arcade Game Project\Library\PackageCache\com.unity.ugui@1.0.0
-  assetPath: Packages/com.unity.ugui
-  name: com.unity.ugui
-  displayName: Unity UI
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: "Unity UI is a set of tools for developing user interfaces for games
-    and applications. It is a GameObject-based UI system that uses Components and
-    the Game View to arrange, position, and style user interfaces. \u200B You cannot
-    use Unity UI to create or change user interfaces in the Unity Editor."
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.0
-    compatible:
-    - 1.0.0
-    verified: 1.0.0
-  dependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  keywords:
-  - UI
-  - ugui
-  - Unity UI
-  - Canvas
-  registry:
-    id: 
-    name: 
-    url: 
-    scopes: []
-    isDefault: 0
-    capabilities: 0
-  hasRegistry: 0
-  hideInEditor: 1
-  entitlements:
-    isAllowed: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
     path: 
   unityLifecycle:
     version: 
@@ -3330,6 +3264,72 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   keywords: []
+  registry:
+    id: 
+    name: 
+    url: 
+    scopes: []
+    isDefault: 0
+    capabilities: 0
+  hasRegistry: 0
+  hideInEditor: 1
+  entitlements:
+    isAllowed: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+- packageId: com.unity.ugui@1.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.0
+  source: 2
+  resolvedPath: G:\Work\GitKraken\GPR103-Assessment-4-Arcade-Game-Project\Assessment
+    4 Arcade Game Project\Library\PackageCache\com.unity.ugui@1.0.0
+  assetPath: Packages/com.unity.ugui
+  name: com.unity.ugui
+  displayName: Unity UI
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: "Unity UI is a set of tools for developing user interfaces for games
+    and applications. It is a GameObject-based UI system that uses Components and
+    the Game View to arrange, position, and style user interfaces. \u200B You cannot
+    use Unity UI to create or change user interfaces in the Unity Editor."
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    verified: 1.0.0
+  dependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - UI
+  - ugui
+  - Unity UI
+  - Canvas
   registry:
     id: 
     name: 
