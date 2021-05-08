@@ -44,7 +44,7 @@ public class PlayerMovement :  MonoBehaviour
         myGameData = new GameData(mGameData2);
         myScore = 0;
         scoreText = GameObject.Find("ScoreText");
-        myGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        //myGameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //endGameImage.visible = false;
         timerIsRunning = true;
         RewardSound = GetComponent<AudioSource>();

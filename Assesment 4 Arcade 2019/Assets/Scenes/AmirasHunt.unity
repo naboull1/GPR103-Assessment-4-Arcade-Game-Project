@@ -132,6 +132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Onion
       objectReference: {fileID: 0}
+    - target: {fileID: 1067201021930494, guid: 097013ceeb8052648be3891c0984df9a, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4089867009530516, guid: 097013ceeb8052648be3891c0984df9a, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -251,6 +255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toast
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011356331470, guid: 00a1a863a89404d46a228ffab189f332, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010950447518, guid: 00a1a863a89404d46a228ffab189f332, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -326,6 +334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shrimp
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012389451028, guid: 819bc2dc8cc285d4db64ae40568e2150, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012150083244, guid: 819bc2dc8cc285d4db64ae40568e2150, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -400,6 +412,10 @@ PrefabInstance:
     - target: {fileID: 1000012997751318, guid: 0550765fb22bb954ea0412b7153ff417, type: 3}
       propertyPath: m_Name
       value: Banana
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012997751318, guid: 0550765fb22bb954ea0412b7153ff417, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000011676345262, guid: 0550765fb22bb954ea0412b7153ff417, type: 3}
       propertyPath: m_RootOrder
@@ -959,6 +975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pineapple
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010466361374, guid: 80c29c7e0bd64654f8f59dda85e24897, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012476222584, guid: 80c29c7e0bd64654f8f59dda85e24897, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1233,8 +1253,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480334048}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -6.74, z: 0}
+  m_LocalScale: {x: 1, y: 0.60257524, z: 1}
   m_Children: []
   m_Father: {fileID: 1953559281}
   m_RootOrder: 0
@@ -1511,6 +1531,10 @@ PrefabInstance:
     - target: {fileID: 1000014030850534, guid: 308c89097ca814e44b0ff03d3c0c633b, type: 3}
       propertyPath: m_Name
       value: IceCream
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014030850534, guid: 308c89097ca814e44b0ff03d3c0c633b, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000010030412268, guid: 308c89097ca814e44b0ff03d3c0c633b, type: 3}
       propertyPath: m_RootOrder
@@ -2420,6 +2444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tacos
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011323704582, guid: 927b358a489fa874780f1278268d7bfb, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012284530990, guid: 927b358a489fa874780f1278268d7bfb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2563,6 +2591,10 @@ PrefabInstance:
     - target: {fileID: 1000011216760202, guid: 78a6a596f3cdc2641b44bb3d371c8db0, type: 3}
       propertyPath: m_Name
       value: Watermelon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011216760202, guid: 78a6a596f3cdc2641b44bb3d371c8db0, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000012037240470, guid: 78a6a596f3cdc2641b44bb3d371c8db0, type: 3}
       propertyPath: m_RootOrder
@@ -3027,6 +3059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Onigiri
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013051596076, guid: b93286b7dfa93834caec88d1044606c2, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013435742366, guid: b93286b7dfa93834caec88d1044606c2, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -3237,6 +3273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salad
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011262040222, guid: 196fe542ad163b149adf1ca04c19c753, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012234704302, guid: 196fe542ad163b149adf1ca04c19c753, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3311,6 +3351,10 @@ PrefabInstance:
     - target: {fileID: 1000012462574190, guid: c0c0fda6f19f74b48a689470425ef5a9, type: 3}
       propertyPath: m_Name
       value: Eclair_Chocolate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012462574190, guid: c0c0fda6f19f74b48a689470425ef5a9, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000010854279264, guid: c0c0fda6f19f74b48a689470425ef5a9, type: 3}
       propertyPath: m_RootOrder
@@ -3969,6 +4013,10 @@ PrefabInstance:
     - target: {fileID: 1000011448446114, guid: 8155176e03f33f44884efb0dd767197c, type: 3}
       propertyPath: m_Name
       value: Burger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011448446114, guid: 8155176e03f33f44884efb0dd767197c, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000011445454492, guid: 8155176e03f33f44884efb0dd767197c, type: 3}
       propertyPath: m_RootOrder
@@ -4678,6 +4726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Steak_Cooked
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012081886716, guid: 0b2c2c6617d3fb54ab69e7ff4da40867, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012043725196, guid: 0b2c2c6617d3fb54ab69e7ff4da40867, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4903,6 +4955,10 @@ PrefabInstance:
     - target: {fileID: 1000011314148014, guid: 91e1f9e8a986ed344be385215d3145b3, type: 3}
       propertyPath: m_Name
       value: Chips_Bag
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011314148014, guid: 91e1f9e8a986ed344be385215d3145b3, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000010907262934, guid: 91e1f9e8a986ed344be385215d3145b3, type: 3}
       propertyPath: m_RootOrder
@@ -5195,6 +5251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_Bowl
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013397514734, guid: 50147d929fb926b4eb555a4d0b89ab60, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012772204206, guid: 50147d929fb926b4eb555a4d0b89ab60, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5333,6 +5393,10 @@ PrefabInstance:
     - target: {fileID: 1000010528404258, guid: b7d70d80ddd390f41a1bdde5957f74f0, type: 3}
       propertyPath: m_Name
       value: Cheese_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010528404258, guid: b7d70d80ddd390f41a1bdde5957f74f0, type: 3}
+      propertyPath: m_TagString
+      value: caughtscreen
       objectReference: {fileID: 0}
     - target: {fileID: 4000014078492148, guid: b7d70d80ddd390f41a1bdde5957f74f0, type: 3}
       propertyPath: m_RootOrder
